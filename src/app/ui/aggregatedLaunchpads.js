@@ -1,31 +1,33 @@
 import Link from "next/link";
 import Image from "next/image";
-import pinksaleImage from "../../assets/PINKSALE.png";
-import gempadImage from "../../assets/GEMPAD.png";
-import uncxImage from "../../assets/UNCX.png";
-import dxsaleImage from "../../assets/DXSALE.png";
-import kingpadImage from "../../assets/KINGPAD.png";
-import cookiesaleImage from "../../assets/CookieSale.png";
+import chain from "../../assets/chain.png";
+import chatgpt from "../../assets/chatgpt.png";
+import grok from "../../assets/grok.png";
+import vertex from "../../assets/vertexai.png";
+import dataroboto from "../../assets/datarobot.png";
+import ibmwatson from "../../assets/ibmwatson.png";
+import aibg from "../../assets/aibg.png";
+import depthBackground from "../../assets/depth.png";
 
 export default function AggregatedLaunchpads() {
   return (
-    <section className="mt-40 mb-20">
-      <h1 className="cont text-[2.1em] md:text-4xl blue-text text-center">Integrated Launchpads</h1>
+    <section className="mt-10 mb-20 ">
+      <h1 className="cont text-[2.1em] md:text-4xl blue-text text-center">AI Solutions</h1>
       <div className="flex-center flex-col xl:flex-row gap-5 md:gap-20 mt-10 max-w-[1200px] w-[95%] mx-auto">
         <div className="flex-center md:gap-20">
-          <LaunchpadItem image={pinksaleImage} title="Pinksale" />
-          <LaunchpadItem image={gempadImage} title="Gempad" />
-          <LaunchpadItem image={uncxImage} title="UNCX" />
+          <LaunchpadItem image={chatgpt} title="ChatGPT" />
+          <LaunchpadItem image={ibmwatson} title="IBM Watson" />
+          <LaunchpadItem image={chain} title="LangChain" />
         </div>
         <div className="flex-center md:gap-20">
-          <LaunchpadItem image={dxsaleImage} title="DXSALE" isNew />
-          <LaunchpadItem image={kingpadImage} title="KINGPAD" isNew />
-          <LaunchpadItem image={cookiesaleImage} title="COOKIESALE" isNew />
+          <LaunchpadItem image={grok} title="Grok" isNew />
+          <LaunchpadItem image={vertex} title="Vertex" isNew />
+          <LaunchpadItem image={dataroboto} title="DataRobot" isNew />
         </div>
       </div>
       <div className="flex-center flex-col mt-20 gap-5">
         <p className="nunito text-lg mx-5 md:text-xl text-center opacity-80 text-white">
-          Integrate your launchpad with GrokGPT <br /> for enhanced performance and expand your reach.
+          Integrate with Blockchain experience <br /> for enhanced performance and expand your reach.
         </p>
         <Link href="https://www.grokgpt.com/integrate.html"  className="blue-grad px-10 py-5 rounded-lg cont link-btn text-lg turner">
             <p className="turn-child text-xl">Get Started</p>

@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import flareImage from '../../assets/Flare.png';
 import backgroundImage from '../../assets/BACKGROUND.jpg';
+import heroai from '../../assets/fancy.png';
 // import animationImage from '../../assets/Second animation.gif';
 import AIImage from '../../assets/flipped_AI_training_bot.png';
 // Import other images in a similar manner
@@ -9,8 +10,8 @@ import AIImage from '../../assets/flipped_AI_training_bot.png';
 export default function Hero() {
   return (
     <section className="mt-10 md:mt-0 md:pt-40 hero flex-center md:min-h-[90vh]">
-      <Image src={flareImage} alt="hero flare" className="heroflare-bg hidden md:block" />
-      <Image src={backgroundImage} alt="background" className="backgroundhero" />
+      {/* <Image src={flareImage} alt="hero flare" className="heroflare-bg hidden md:block" /> */}
+      <Image src={heroai} alt="background" className="backgroundhero" />
 
       <div className="flex-between md:items-center w-[95%] mx-auto max-w-[1200px] flex-col-reverse md:flex-row">
         <div className="flex items-center justify-center md:items-start md:justify-start flex-col gap-5 md:gap-5 z-10">
@@ -37,7 +38,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <Image src={AIImage} alt="hero animation" className="gif w-[85%] max-w-[450px] my-2 md:my-0 md:mt-0 object-contain" />
+        {/* <Image src={AIImage} alt="hero animation" className="gif w-[85%] max-w-[450px] my-2 md:my-0 md:mt-0 object-contain" /> */}
       </div>
     </section>
   );
