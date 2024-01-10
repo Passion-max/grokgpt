@@ -1,12 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
-import advancedFilteringAndSorting from "../../assets/Advanced Filtering and Sorting.png";
-import dueDiligenceSupport from "../../assets/Due Diligence Support.png";
-import investorDashboard from "../../assets/Investor Dashboard.png";
-import multiPresaleLaunchpad from "../../assets/Multi-Presale Launchpad.png";
+import smartcontract from "../../assets/smartcontract.png";
+import robot from "../../assets/robot.png";
+import aitrade from "../../assets/aitrade.png";
+import analysis from "../../assets/analysis.png";
 import realTimeInsightsAndAnalytics from "../../assets/Real-Time Insights and Analytics.png";
-import starsBackground from "../../assets/stars.png";
+
 import depthBackground from "../../assets/depth.png";
+import verified from "../../assets/verified.png";
 
 export default function FeaturesSection() {
 
@@ -39,31 +40,31 @@ export default function FeaturesSection() {
           {/* FIRST LINE */}
           <div className="flex-center gap-5 md:gap-14 flex-wrap">
             <FeatureCard
-              image={advancedFilteringAndSorting}
-              title="Advanced Filtering and Sorting"
-              link="https://doc.grokgpt.com/key-features-and-functionalities/advanced-filtering-and-sorting"
+              image={verified}
+              title="Investment Portfolio Management"
+              link="https://doc.grokgpt.com/key-features-and-functionalities/Investment Portfolio Management"
             />
             <FeatureCard
-              image={dueDiligenceSupport}
-              title="Due Diligence Support"
+              image={smartcontract}
+              title="Smart Contract Analysis and Optimization"
               link="https://doc.grokgpt.com/key-features-and-functionalities/due-diligence-support"
             />
             <FeatureCard
-              image={investorDashboard}
-              title="Investor Dashboard"
+              image={robot}
+              title="Automated AI Trading Bots"
               link="https://doc.grokgpt.com/key-features-and-functionalities/investor-dashboard"
             />
           </div>
           {/* SECOND LINE */}
           <div className="flex-center gap-5 md:gap-14 flex-wrap">
             <FeatureCard
-              image={multiPresaleLaunchpad}
-              title="AI AMM"
+              image={aitrade}
+              title="AI-Driven Market Analysis and Prediction Tools"
               link="https://doc.grokgpt.com/key-features-and-functionalities/ai-amm"
             />
             <FeatureCard
-              image={realTimeInsightsAndAnalytics}
-              title="Real-Time Insights and Analytics"
+              image={analysis}
+              title="Sentiment Analysis and Social Media Monitoring"
               link="https://doc.grokgpt.com/key-features-and-functionalities/real-time-insights-and-analytics"
             />
           </div>

@@ -18,11 +18,13 @@ export default function Partners() {
         Partners &amp; Backers
       </h1>
       <p className="monts text-sm md:text-md text-center mx-4 text-gray-400">
-        At GrokGPT, we are fortunate to have an impressive
+        At GrokGPT, we are honored to be supported by a distinguished
         <br />
-        network of partners and backers supporting
+        network of collaborators and benefactors, each contributing 
         <br />
-        our innovative endeavors.
+       to the advancement of our pioneering initiatives
+       <br />
+       in AI and blockchain technology.
       </p>
       <div className="w-[90%] mx-auto">
         <div className="flex-center xl:flex-col w-full mt-10">

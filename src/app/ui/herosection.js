@@ -15,14 +15,14 @@ export default function Hero() {
 
       <div className="flex-between md:items-center w-[95%] mx-auto max-w-[1200px] flex-col-reverse md:flex-row">
         <div className="flex items-center justify-center md:items-start md:justify-start flex-col gap-5 md:gap-5 z-10">
-          <h1 className="text-2xl md:text-4xl lg:text-5xl blue-text cont text-center md:text-start">The Ultimate Toolkit
-            <br /> for all Defi Investors</h1>
-          <p className="monts text-md sm:text-3xl text-center md:text-start">Welcome to GrokGPT, where AI ais trading. <br />
+          <h1 className="text-2xl md:text-4xl lg:text-5xl blue-text cont text-center md:text-start">Grok GPT:
+            <br /> AI-Powered Crypto Revolution</h1>
+          <p className="monts text-md sm:text-3xl text-center md:text-start">Welcome to GrokGPT, where AI meets blockchain. <br />
           Dive into a world where our cutting-edge AI empowers your trading decisions.</p>
           <div className="flex items-center justify-center md:justify-start gap-5">
             <div className="space-y-2">
               <Link href="https://app.grokgpt.com/" className="blue-grad md:px-10 px-5 md:py-3 py-3 rounded-lg cont link-btn turner" >
-              <p class="turn-child text-sm md:text-lg">Launch App</p>
+              <p class="turn-child text-sm md:text-lg">Explore</p>
               </Link>
               <Link href="https://app.uniswap.org/#/swap?chainName=ethereum&amp;outputCurrency=0xc3168B1B4807684A2b0650C4b292f901bF27173A" className="border-grad md:px-10 px-5 md:py-3 py-3 rounded-lg cont link-btn text-sm md:text-lg turner flex-center gap-3">
               <p class="turn-child text-sm md:text-lg">Buy $GROKGPT</p>
@@ -30,10 +30,10 @@ export default function Hero() {
             </div>
             <div className="space-y-2">
               <Link href="https://doc.grokgpt.com/" className="border-grad md:px-10 px-5 md:py-3 py-3 rounded-lg cont link-btn text-sm md:text-lg turner">
-              <p className="turn-child text-sm md:text-lg">Document</p>
+              <p className="turn-child text-sm md:text-lg">Read Docs</p>
               </Link>
-              <Link href="https://t.me/texilix" className="blue-grad md:px-10 px-5 md:py-3 py-3 rounded-lg cont link-btn turner flex-center gap-3">
-              <p class="turn-child text-sm md:text-lg">Telegram</p>
+              <Link href="https://t.me/grokgpt" className="blue-grad md:px-10 px-5 md:py-3 py-3 rounded-lg cont link-btn turner flex-center gap-3">
+              <p class="turn-child text-sm md:text-lg">Community</p>
               </Link>
             </div>
           </div>
