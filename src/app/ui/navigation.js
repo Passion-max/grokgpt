@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { useState,  useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import Image from "next/image";
 
 import logoImage from "../../assets/logo.png";
@@ -13,6 +13,7 @@ import facebookImage from "../../assets/FACEBOOK.png";
 import mediumImage from "../../assets/Mediume.png";
 import etherscanImage from "../../assets/Etherscan.png";
 import gitbookImage from "../../assets/Gitbook.png";
+import copyicon from "../../assets/copy.png";
 
 export default function Navigation() {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
@@ -25,6 +26,17 @@ export default function Navigation() {
   const handleScrollToSection = (ref) => {
     if (ref && ref.current) {
       ref.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const walletAddress = '0xf2a95690A311602834023Bd6735F9D739fF1C1B1';
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(walletAddress);
+      alert('Wallet address copied to clipboard!');
+    } catch (err) {
+      console.error('Failed to copy: ', err);
     }
   };
   return (
@@ -101,12 +113,14 @@ export default function Navigation() {
               </Link>
             </div>
             <div className="flex-center gap-2">
-              <Link
-                href="https://app.grokgpt.com/"
+              <button
+                onClick={handleCopy}
                 className="grey-grad nav-btn px-2 md:px-5 py-3 rounded-lg grey-grad cont link-btn turner hidden md:flex"
               >
-                <p className="turn-child text-xs sm:text-md">Launch app</p>
-              </Link>
+                <p className="turn-child text-xs sm:text-md">0xf2a9569...1C1B1 
+                
+                </p>
+              </button>
 
               <div
                 onClick={toggleMobileNav}
